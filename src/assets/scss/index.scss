@@ -1,32 +1,17 @@
 // css reset
-@import "_normalize";
-@import "_variables";
-@import "_vertical-rhythm";
+@import "reset/_normalize";
+@import "reset/variables";
+@import "reset/_vertical-rhythm";
 
-// setup & config
-@import "app";
-
-// global / shared
-
+// shared
+@import "shared/app";
+@import "shared/classes";
+@import "shared/layout";
+@import "shared/mixins";
 
 // components
+@import "components/_header";
 
 
 // views
 
-
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
