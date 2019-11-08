@@ -1,7 +1,7 @@
 // css reset
-@import "reset/_normalize";
+@import "reset/normalize";
 @import "reset/variables";
-@import "reset/_vertical-rhythm";
+@import "reset/vertical-rhythm";
 
 // shared
 @import "shared/app";
@@ -11,7 +11,9 @@
 
 // components
 @import "../../components/header/header";
-
+@import "../../components/footer/footer";
 
 // views
+@import "../../views/login/login";
+@import "../../views/notFound/notFound";
 

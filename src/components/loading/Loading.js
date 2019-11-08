@@ -1,4 +1,5 @@
 import React from 'react';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default class Loading extends React.Component {
   constructor(props) {
@@ -17,9 +18,7 @@ export default class Loading extends React.Component {
 
   render() {
     return (
-      <p>
-        {this.state.content}
-      </p>
+      <CircularProgress />
     )
   }
 }
