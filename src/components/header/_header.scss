@@ -1,31 +1,36 @@
 .Header {
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	display: flex;
-	.Logo-container {
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-		color: black;
-		margin-right: 50px;
-		border: none;
-		.App-logo {
-			height: 80px;
-		}
-	}
-	.menuButton {
-		display: none;
-	}
-	.Navbar {
-		width: 80%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		button, a {
-			color: #f2f2f2;
-		}
-	}
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: flex;
+
+  .Logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    border: none;
+
+    .App-logo {
+      height: 80px;
+    }
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .Navbar {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    button, a {
+      color: #f2f2f2;
+    }
+  }
 }
 
 

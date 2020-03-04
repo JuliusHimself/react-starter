@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer () {
   return (
-    <div className='Header'>
+    <div className='Footer'>
       I'm the footer
     </div>
   )
