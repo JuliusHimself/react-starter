@@ -4,9 +4,9 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Loading from './components/loading/Loading'
 
-const Home = React.lazy(() => import('./views/home/Home'))
-const Login = React.lazy(() => import('./views/login/Login'))
-const NotFound = React.lazy(() => import('./views/notFound/NotFound'))
+const Home = React.lazy(() => import('./pages/home/Home'))
+const Login = React.lazy(() => import('./pages/login/Login'))
+const NotFound = React.lazy(() => import('./pages/notFound/NotFound'))
 
 class App extends React.Component {
 	constructor (props) {
@@ -29,8 +29,8 @@ class App extends React.Component {
 			<div className="App">
 				<Router>
 					<Header/>
-					<main className="App-content">
 
+					<main className="App-content">
 						<React.Suspense fallback={<Loading/>}>
 							<Switch>
 								<Route exact path="/" component={Home}/>
@@ -38,8 +38,8 @@ class App extends React.Component {
 								<Route component={NotFound}/>
 							</Switch>
 						</React.Suspense>
-
 					</main>
+
 					<Footer/>
 				</Router>
 			</div>
